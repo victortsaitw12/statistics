@@ -1,33 +1,5 @@
-var mean = require('./mean.js');
-var variance = require('./variance.js');
-var deviation = require('./deviation.js');
-var median = require('./median.js');
-var coefficientOfVariance = require('./coefficientOfVariance.js');
-var zscore = require('./zscore.js');
-var findOutliersForZscore = require('./findOutliersForZscore.js');
-var checkSkewness = require('./checkSkewness.js');
-var empiricalRule = require('./empiricalRule.js');
-var covariance = require('./covariance.js');
-var coefficientOfCorrelation = require('./coefficientOfCorrelation.js');
-var explainLinearRelation = require('./explainLinearRelation.js');
-var x = [8, 3, 10, 6, 4, 13, 5 ];
-console.log('data:' + x);
-console.log('sorted:' + x.slice().sort((a, b) => a-b));
-console.log('sum:' + x.reduce((sum, i) => sum + i));
-console.log('median:' + median(x));
-console.log('mean:' + mean(x));
-console.log('variance:' + variance(x));
-console.log('deviation:' + deviation(x));
-console.log('coefficientOfVariance:' + coefficientOfVariance(x));
-console.log('zscore:' + zscore(x));
-console.log('OutliersForZscore:' + findOutliersForZscore(zscore(x)));
-console.log('check skewed:' + checkSkewness(x));
-console.log('empirical rule:' + empiricalRule(x));
-
-var a = [8, 6, 9, 4, 7, 11, 13, 5, 10, 16, 19];
-var b = [22, 15, 25, 10, 19, 31, 37, 13, 27, 45, 54];
-console.log('data a:' + a);
-console.log('data b:' + b);
-console.log('covariance:' + covariance(a,b));
-console.log('coefficient of correlation:' + coefficientOfCorrelation(a, b));
-console.log('relation:' + explainLinearRelation(coefficientOfCorrelation(a, b)));
+var factorial = require('./factorial.js');
+var combination = require('./combination.js');
+var permutation = require('./permutation.js');
+var bi  = require('./binomialDistribution.js')
+console.log(bi(5, 0, 0.11));
