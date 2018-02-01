@@ -1,5 +1,8 @@
-var factorial = require('./factorial.js');
-var combination = require('./combination.js');
-var permutation = require('./permutation.js');
-var bi  = require('./binomialDistribution.js')
-console.log(bi(5, 0, 0.11));
+var comb = require('./combination.js');
+var poissonDistribution = require('./poissonDistribution.js');
+
+var lambda = 6.0;
+Xs = [0]
+var ans = Xs.reduce((sum, x) => sum + poissonDistribution(lambda, x), 0);
+console.log(ans);
+
