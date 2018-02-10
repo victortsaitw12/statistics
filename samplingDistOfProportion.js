@@ -1,0 +1,1 @@
+module.exports = (p, pi, n) => (p - pi) / Math.sqrt(pi * (1-pi)/n)

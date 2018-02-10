@@ -1,8 +1,7 @@
-var comb = require('./combination.js');
-var poissonDistribution = require('./poissonDistribution.js');
+var z_fn = require('./samplingDistOfProportion');
 
-var lambda = 6.0;
-Xs = [0]
-var ans = Xs.reduce((sum, x) => sum + poissonDistribution(lambda, x), 0);
-console.log(ans);
+console.log(z_fn(0.82, 0.80, 100));
+
+console.log(1.0-0.6915)
+
 
